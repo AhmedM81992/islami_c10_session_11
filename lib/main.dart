@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:islami_c10_session_11/home/home_page.dart';
-import 'package:islami_c10_session_11/home/tabs/moshaf.dart';
-import 'package:islami_c10_session_11/home/tabs/quran.dart';
-import 'package:islami_c10_session_11/home/tabs/radio.dart';
-import 'package:islami_c10_session_11/home/tabs/sebha.dart';
-import 'package:islami_c10_session_11/home/tabs/settings.dart';
+import 'package:islami_c10_session_11/home/tabs/moshaf_tab.dart';
+import 'package:islami_c10_session_11/home/tabs/quran_tab.dart';
+import 'package:islami_c10_session_11/home/tabs/radio_tab.dart';
+import 'package:islami_c10_session_11/home/tabs/sebha_tab.dart';
+import 'package:islami_c10_session_11/home/tabs/settings_tab.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class QuranPage extends StatelessWidget {
+class QuranTab extends StatelessWidget {
   //static const String routeName = "Quran";
-  const QuranPage({super.key});
+  const QuranTab({super.key});
 
   @override
   Widget build(BuildContext context) {

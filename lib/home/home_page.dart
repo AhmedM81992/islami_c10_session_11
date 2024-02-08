@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:islami_c10_session_11/home/tabs/moshaf.dart';
-import 'package:islami_c10_session_11/home/tabs/quran.dart';
-import 'package:islami_c10_session_11/home/tabs/radio.dart';
-import 'package:islami_c10_session_11/home/tabs/sebha.dart';
-import 'package:islami_c10_session_11/home/tabs/settings.dart';
+import 'package:islami_c10_session_11/home/tabs/moshaf_tab.dart';
+import 'package:islami_c10_session_11/home/tabs/quran_tab.dart';
+import 'package:islami_c10_session_11/home/tabs/radio_tab.dart';
+import 'package:islami_c10_session_11/home/tabs/sebha_tab.dart';
+import 'package:islami_c10_session_11/home/tabs/settings_tab.dart';
 
 class HomePage extends StatefulWidget {
   static const String routeName = "Home";
@@ -74,10 +74,10 @@ class _HomePageState extends State<HomePage> {
   }
 
   List<Widget> tabs = [
-    RadioPage(),
-    SebhaPage(),
-    QuranPage(),
-    MoshafPage(),
-    SettingsPage()
+    RadioTab(),
+    SebhaTab(),
+    QuranTab(),
+    MoshafTab(),
+    SettingsTab()
   ];
 }
