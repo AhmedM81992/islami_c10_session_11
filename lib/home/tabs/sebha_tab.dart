@@ -29,7 +29,7 @@ class _SebhaTabState extends State<SebhaTab> {
                   child: ElevatedButton(
                     onPressed: () {
                       setState(() {
-                        if (counter < 10) {
+                        if (counter < 30) {
                           counter++;
                           mainCounter++;
                         } else {
@@ -58,7 +58,7 @@ class _SebhaTabState extends State<SebhaTab> {
                   child: ElevatedButton(
                     onPressed: () {
                       setState(() {
-                        if (counter < 10) {
+                        if (counter < 30) {
                           counter++;
                           mainCounter++;
                         } else {
@@ -107,7 +107,7 @@ class _SebhaTabState extends State<SebhaTab> {
             child: ElevatedButton(
                 onPressed: () {
                   setState(() {
-                    if (counter < 10) {
+                    if (counter < 30) {
                       counter++;
                       mainCounter++;
                     } else {
@@ -133,12 +133,12 @@ class _SebhaTabState extends State<SebhaTab> {
   }
 
   String switchWord() {
-    if (mainCounter < 10) {
+    if (mainCounter < 30) {
       return "سبحان الله";
-    } else if (mainCounter < 20) {
-      return "hey";
-    } else if (mainCounter < 30) {
-      return "me";
+    } else if (mainCounter < 60) {
+      return "الحمدلله";
+    } else if (mainCounter < 90) {
+      return "الله اكبر";
     }
     mainCounter = 0;
     return "سبحان الله";
