@@ -105,27 +105,35 @@ class _SebhaTabState extends State<SebhaTab> {
           Container(
             padding: EdgeInsets.only(left: 100, top: 10),
             child: ElevatedButton(
-                onPressed: () {
-                  setState(() {
-                    if (counter < 30) {
-                      counter++;
-                      mainCounter++;
-                    } else {
-                      counter = 0;
-                    }
-                  });
-                },
+              onPressed: () {
+                setState(() {
+                  if (counter < 30) {
+                    counter++;
+                    mainCounter++;
+                  } else {
+                    counter = 0;
+                  }
+                });
+              },
+              child: SizedBox(
+                width: 100,
+                height: 45,
                 child: Text(
                   "${switchWord()}",
                   style: GoogleFonts.inter(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 25,
-                      color: Colors.white),
+                    fontWeight: FontWeight.w400,
+                    fontSize: 25,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.center,
                 ),
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xffB7935F),
-                    padding: EdgeInsets.only(
-                        left: 30, right: 30, top: 5, bottom: 5))),
+              ),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color(0xffB7935F),
+                padding:
+                    EdgeInsets.only(left: 30, right: 30, top: 10, bottom: 0),
+              ),
+            ),
           ),
         ],
       ),
