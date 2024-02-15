@@ -141,11 +141,11 @@ class _SebhaTabState extends State<SebhaTab> {
   }
 
   String switchWord() {
-    if (mainCounter < 30) {
+    if (mainCounter <= 30) {
       return "سبحان الله";
-    } else if (mainCounter < 60) {
+    } else if (mainCounter <= 60) {
       return "الحمدلله";
-    } else if (mainCounter < 90) {
+    } else if (mainCounter <= 90) {
       return "الله اكبر";
     }
     mainCounter = 0;

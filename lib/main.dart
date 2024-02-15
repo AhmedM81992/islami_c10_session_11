@@ -5,6 +5,7 @@ import 'package:islami_c10_session_11/home/tabs/quran_tab.dart';
 import 'package:islami_c10_session_11/home/tabs/radio_tab.dart';
 import 'package:islami_c10_session_11/home/tabs/sebha_tab.dart';
 import 'package:islami_c10_session_11/home/tabs/settings_tab.dart';
+import 'package:islami_c10_session_11/sura_details.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       initialRoute: HomePage.routeName,
       routes: {
         HomePage.routeName: (context) => HomePage(),
+        SuraDetailsScreen.routeName: (context) => SuraDetailsScreen(),
         //RadioPage.routeName: (context) => RadioPage(),
         //QuranPage.routeName: (context) => QuranPage(),
         //MoshafPage.routeName: (context) => MoshafPage(),
