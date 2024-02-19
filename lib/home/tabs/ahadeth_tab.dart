@@ -6,8 +6,24 @@ class AhadethTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.green,
+    return Column(
+      children: [
+        Image.asset("assets/images/ahadeth_tab/ahadeth_logo.png"),
+        Divider(
+          thickness: 3,
+          color: Color(0xFFB7935F),
+        ),
+        Text(
+          "الأحاديث",
+          style: Theme.of(context).textTheme.bodyMedium,
+        ),
+        Divider(
+          thickness: 3,
+          color: Color(0xFFB7935F),
+        ),
+      ],
     );
   }
 }
+
+loadHadethFile() {}

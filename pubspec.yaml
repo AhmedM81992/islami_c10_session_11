@@ -62,7 +62,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+   - assets/images/ahadeth_tab/
    - assets/files/sowar/
+   - assets/files/ahadeth/
    - assets/images/quran_tab/
    - assets/images/radio_page/
    - assets/images/back_ground/
