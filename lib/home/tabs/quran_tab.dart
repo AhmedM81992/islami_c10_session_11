@@ -142,18 +142,13 @@ class QuranTab extends StatelessWidget {
           children: [
             Text(
               "عدد الآيات",
-              style: GoogleFonts.elMessiri(
-                  fontWeight: FontWeight.w600, fontSize: 25),
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
             Divider(
               thickness: 3,
               color: Color(0xFFB7935F),
             ),
-            Text(
-              "عدد الآيات",
-              style: GoogleFonts.elMessiri(
-                  fontWeight: FontWeight.w600, fontSize: 25),
-            ),
+            Text("عدد الآيات", style: Theme.of(context).textTheme.bodyMedium),
           ],
         ),
         Divider(
@@ -179,8 +174,7 @@ class QuranTab extends StatelessWidget {
                 },
                 child: Text(
                   suraNames[index],
-                  style: GoogleFonts.elMessiri(
-                      fontSize: 25, fontWeight: FontWeight.w400),
+                  style: Theme.of(context).textTheme.bodySmall,
                   textAlign: TextAlign.center,
                 ),
               );

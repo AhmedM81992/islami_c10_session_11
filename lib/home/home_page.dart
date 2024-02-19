@@ -26,27 +26,27 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       child: Scaffold(
-        backgroundColor: Colors.transparent,
+        //backgroundColor: Colors.transparent,
         appBar: AppBar(
           centerTitle: true,
           title: Text(
             "إسلامي",
-            style: GoogleFonts.elMessiri(
-                fontSize: 30, fontWeight: FontWeight.bold),
+            // style: GoogleFonts.elMessiri( //replaced by using theme for appbar.
+            //     fontSize: 30, fontWeight: FontWeight.bold),
           ),
           backgroundColor: Colors.transparent,
         ),
         body: tabs[index],
         bottomNavigationBar: BottomNavigationBar(
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
+          /*// showSelectedLabels: false,
+          // showUnselectedLabels: false,
+          // backgroundColor: Color(0xffB7935F),
+          // type: BottomNavigationBarType.fixed,
+          // elevation: 0,
+          //NOTE: In older sessions needed that line to show the backgroundColors
+          //selectedItemColor: Colors.white,*/ //replaced by theme data.
           currentIndex: index,
-          backgroundColor: Color(0xffB7935F),
-          type: BottomNavigationBarType.fixed,
           iconSize: 35,
-          elevation: 0,
-          //older sessions needed that line to show the backgroundColors
-          selectedItemColor: Colors.white,
           onTap: (value) {
             setState(() {
               index = value;

@@ -29,14 +29,14 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
         ),
       ),
       child: Scaffold(
-        backgroundColor: Colors.transparent,
+        //backgroundColor: Colors.transparent,
         appBar: AppBar(
           centerTitle: true,
           backgroundColor: Colors.transparent,
           title: Text(
             model.name,
-            style: GoogleFonts.elMessiri(
-                fontWeight: FontWeight.bold, fontSize: 30),
+            // style: GoogleFonts.elMessiri(
+            //     fontWeight: FontWeight.bold, fontSize: 30),
           ),
         ),
         body: Card(
@@ -53,10 +53,11 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
             itemBuilder: (context, index) {
               return Text(
                 verses[index],
-                style: GoogleFonts.elMessiri(
+                style: /*GoogleFonts.elMessiri(
                     fontSize: 20,
                     fontWeight: FontWeight.w400,
-                    letterSpacing: .5),
+                    letterSpacing: .5),*/
+                    Theme.of(context).textTheme.bodySmall,
                 textAlign: TextAlign.center,
               );
             },
