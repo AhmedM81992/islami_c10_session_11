@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_c10_session_11/home/home_page.dart';
-import 'package:islami_c10_session_11/home/tabs/moshaf_tab.dart';
+import 'package:islami_c10_session_11/home/tabs/ahadeth_tab.dart';
 import 'package:islami_c10_session_11/home/tabs/quran_tab.dart';
 import 'package:islami_c10_session_11/home/tabs/radio_tab.dart';
 import 'package:islami_c10_session_11/home/tabs/sebha_tab.dart';

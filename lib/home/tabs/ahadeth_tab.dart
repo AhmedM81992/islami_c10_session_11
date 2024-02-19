@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class MoshafTab extends StatelessWidget {
+class AhadethTab extends StatelessWidget {
   //static const String routeName = "MoshafPage";
-  const MoshafTab({super.key});
+  const AhadethTab({super.key});
 
   @override
   Widget build(BuildContext context) {
