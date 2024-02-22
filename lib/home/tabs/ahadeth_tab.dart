@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:islami_c10_session_11/hadeth_details.dart';
+import 'package:islami_c10_session_11/my_theme_data.dart';
 
 import '../../models/hadeth_model.dart';
 
@@ -35,11 +37,23 @@ class _AhadethTabState extends State<AhadethTab> {
           color: Color(0xFFB7935F),
         ),
         Expanded(
-          child: ListView.builder(
+          child: ListView.separated(
+            separatorBuilder: (context, index) => Divider(
+              color: MyThemeData.primaryColor,
+              indent: 50,
+              endIndent: 50,
+            ),
             itemBuilder: (context, index) {
-              return Text(
-                ahadethData[index].title,
-                textAlign: TextAlign.center,
+              return InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, HadethDetails.routeName,
+                      arguments: ahadethData[index]);
+                },
+                child: Text(
+                  ahadethData[index].title,
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
               );
             },
             itemCount: ahadethData.length,
@@ -59,7 +73,8 @@ class _AhadethTabState extends State<AhadethTab> {
 
       for (int i = 0; i < ahadeth.length; i++) {
         String hadeth = ahadeth[i];
-        List<String> hadethLines = hadeth.split("\n");
+        List<String> hadethLines = hadeth.trim().split("\n");
+        //trim removes the space behind and after a word.
         String title = hadethLines[0];
         hadethLines.removeAt(0);
         List<String> hadethContent = hadethLines;

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:islami_c10_session_11/hadeth_details.dart';
 import 'package:islami_c10_session_11/home/home_page.dart';
 import 'package:islami_c10_session_11/home/tabs/ahadeth_tab.dart';
 import 'package:islami_c10_session_11/home/tabs/quran_tab.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
       routes: {
         HomePage.routeName: (context) => HomePage(),
         SuraDetailsScreen.routeName: (context) => SuraDetailsScreen(),
+        HadethDetails.routeName: (context) => HadethDetails(),
         //RadioPage.routeName: (context) => RadioPage(),
         //QuranPage.routeName: (context) => QuranPage(),
         //MoshafPage.routeName: (context) => MoshafPage(),

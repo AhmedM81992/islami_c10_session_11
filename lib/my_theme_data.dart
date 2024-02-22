@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyThemeData {
+  static const Color primaryColor = Color(0xFFB7935F);
+
   static ThemeData lightTheme = ThemeData(
     textTheme: TextTheme(
       bodyLarge:
@@ -15,7 +17,7 @@ class MyThemeData {
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       showSelectedLabels: false,
       showUnselectedLabels: false,
-      backgroundColor: Color(0xffB7935F),
+      backgroundColor: primaryColor,
       type: BottomNavigationBarType.fixed,
       elevation: 0,
       selectedItemColor: Colors.white,

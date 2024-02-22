@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_c10_session_11/models/sura_model.dart';
+import 'package:islami_c10_session_11/my_theme_data.dart';
 import 'package:islami_c10_session_11/sura_details.dart';
 
 class QuranTab extends StatelessWidget {
@@ -135,7 +136,7 @@ class QuranTab extends StatelessWidget {
         ),
         Divider(
           thickness: 3,
-          color: Color(0xFFB7935F),
+          color: MyThemeData.primaryColor,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -146,14 +147,14 @@ class QuranTab extends StatelessWidget {
             ),
             Divider(
               thickness: 3,
-              color: Color(0xFFB7935F),
+              color: MyThemeData.primaryColor,
             ),
             Text("عدد الآيات", style: Theme.of(context).textTheme.bodyMedium),
           ],
         ),
         Divider(
           thickness: 3,
-          color: Color(0xFFB7935F),
+          color: MyThemeData.primaryColor,
         ),
         Expanded(
           child: ListView.separated(
@@ -161,7 +162,7 @@ class QuranTab extends StatelessWidget {
               endIndent: 50,
               indent: 50,
               thickness: 1,
-              color: Color(0xFFB7935F),
+              color: MyThemeData.primaryColor,
             ),
             itemBuilder: (context, index) {
               return InkWell(
