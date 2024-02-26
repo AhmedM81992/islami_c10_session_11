@@ -39,11 +39,11 @@ class _SebhaTabState extends State<SebhaTab> {
                       });
                     },
                     style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(0),
-                      ),
-                      padding: EdgeInsets.zero,
-                    ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(0),
+                        ),
+                        padding: EdgeInsets.zero,
+                        backgroundColor: Colors.transparent),
                     child: Image.asset(
                       'assets/images/sebha_page/headofseb7a.png',
                       width: 50,
@@ -73,7 +73,7 @@ class _SebhaTabState extends State<SebhaTab> {
                           borderRadius: BorderRadius.circular(0),
                         ),
                         padding: EdgeInsets.zero,
-                        backgroundColor: Color(0xfffafafa)),
+                        backgroundColor: Colors.transparent),
                     child: Image.asset(
                       'assets/images/sebha_page/bodyofseb7a.png',
                       width: 240,

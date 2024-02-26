@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami_c10_session_11/models/sura_model.dart';
 import 'package:islami_c10_session_11/my_theme_data.dart';
-import 'package:islami_c10_session_11/sura_details.dart';
+import 'package:islami_c10_session_11/sura_details/sura_details.dart';
 
 class QuranTab extends StatelessWidget {
   //static const String routeName = "Quran";
@@ -142,14 +142,15 @@ class QuranTab extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "عدد الآيات",
+              AppLocalizations.of(context)!.suraName,
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             Divider(
               thickness: 3,
               color: MyThemeData.primaryColor,
             ),
-            Text("عدد الآيات", style: Theme.of(context).textTheme.bodyMedium),
+            Text(AppLocalizations.of(context)!.numbersAya,
+                style: Theme.of(context).textTheme.bodyMedium),
           ],
         ),
         Divider(
